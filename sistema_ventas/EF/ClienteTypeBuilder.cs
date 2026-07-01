@@ -14,7 +14,8 @@ namespace sistema_ventas.EF
             builder.Property(p => p.Nombre).HasColumnName("NOMBRE").HasMaxLength(100);
             builder.Property(p => p.Direccion).HasColumnName("DIRECCION").HasMaxLength(250);
             builder.Property(p => p.Telefono).HasColumnName("TELEFONO").HasMaxLength(15);
-            builder.Property(p => p.Membresia).HasColumnName("MEMBRESIA");
+            builder.Property(p => p.IdMembresia).HasColumnName("ID_MEMBRESIA");
+            builder.HasOne(fk => fk.Membresia).WithMany().HasForeignKey(fk => fk.IdMembresia);
             builder.ToTable("CLIENTES");
 
         }
