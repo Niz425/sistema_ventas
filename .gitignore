@@ -68,3 +68,4 @@ appsettings.local.json
 .env.*
 !.env.example
 sistema_ventas/Clases/Deprecated
+sistema_ventas/Interfaz/Deprecated
