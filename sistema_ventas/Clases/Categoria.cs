@@ -18,9 +18,10 @@
 
         }
         
-        public Categoria(string name)
+        public Categoria(int id, string name)
         {
             // descripcion = name;
+            IdCategoria = id;
             Descripcion = name;
         }
 
